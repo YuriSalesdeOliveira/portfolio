@@ -32,4 +32,4 @@ Estou constantemente buscando me aprofundar nas tecnologias que já utilizo, com
 Se você deseja saber mais sobre meu trabalho ou discutir possíveis colaborações, sinta-se à vontade para entrar em contato comigo:
 
 - **Email:** yuri_oli@hotmail.com
-- **LinkedIn:** [Seu Perfil](https://www.linkedin.com/in/yuri-sales-de-oliveira)
+- **LinkedIn:** [Yuri Oliveira](https://www.linkedin.com/in/yuri-sales-de-oliveira)

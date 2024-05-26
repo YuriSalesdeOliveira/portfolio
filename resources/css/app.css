@@ -1,0 +1,41 @@
+:root {
+    font-size: 62.5%;
+
+    --color-gray: 108, 108, 108;
+
+    --gb-font-size-xs: 1.2rem;
+    --gb-font-size-sm: 1.4rem;
+    --gb-font-size-md: 1.6rem;
+    --gb-font-size-lg: 2.0rem;
+    --gb-font-size-xl: 2.4rem;
+
+    --space-xs: 0.4rem;
+    --space-sm: 1.0rem;
+    --space-md: 1.6rem;
+    --space-lg: 2.4rem;
+    --space-xl: 3.2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ol,
+    ul,
+    menu {
+        list-style: none;
+    }
+
+    .u-container {
+        width: 980px;
+        margin: 0 auto;
+    }
+}

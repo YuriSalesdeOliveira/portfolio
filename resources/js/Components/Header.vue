@@ -8,7 +8,7 @@
             </a>
         </div>
 
-        <nav class="l-header__nav">
+        <nav class="l-header__menu">
 
             <menu class="l-header__list">
 
@@ -58,27 +58,27 @@
         .l-header__link {
             font-weight: 500;
             font-size: var(--gb-font-size-xl);
-            color: black;
+            color: rgb(var(--color-text-primary));
         }
     }
 
-    .l-header__nav {
+    .l-header__menu {
         .l-header__list {
             display: flex;
             gap: 2.8rem;
 
             .l-header__item {
                 font-size: var(--gb-font-size-md);
-                color: rgba(var(--color-gray), .7);
+                color: rgba(var(--color-text-secondary), .7);
 
                 transition: all linear .2s;
 
                 &.--active {
-                    color: black;
+                    color: rgb(var(--color-text-primary));
                 }
 
                 &:hover {
-                    color: black;
+                    color: rgb(var(--color-text-primary));
                 }
             }
         }

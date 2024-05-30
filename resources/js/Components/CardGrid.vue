@@ -45,7 +45,7 @@ const props = defineProps({
     },
     backgroundColor: {
         type: String,
-        default: 'rgba(var(--color-gray), .05)'
+        default: 'rgb(var(--color-overlay-primary))'
     }
 });
 
@@ -55,6 +55,12 @@ const props = defineProps({
 .c-card-grid {
     width: 100%;
     padding: var(--space-xl) 0;
+
+    &:not(:has(.c-card-grid__subtitle)) {
+        .c-card-grid__title {
+            margin-bottom: var(--space-xl);
+        }
+    }
 
     .c-card-grid__title {
         margin-bottom: var(--space-xs);
@@ -67,8 +73,8 @@ const props = defineProps({
         margin-bottom: var(--space-xl);
         font-weight: 300;
         font-size: var(--gb-font-size-md);
-        text-shadow: 0 0 0 rgba(var(--color-gray), .6);
-        color: rgba(var(--color-gray), .6);
+        text-shadow: 0 0 0 rgba(var(--color-text-secondary), .6);
+        color: rgba(var(--color-text-secondary), .6);
     }
 
     .c-card-grid__wrapper {
@@ -97,7 +103,7 @@ const props = defineProps({
                 .c-card-grid__tag {
                     font-weight: 300;
                     font-size: var(--gb-font-size-sm);
-                    color: rgba(var(--color-gray), .8);
+                    color: rgba(var(--color-text-secondary), .8);
                 }
     
                 .c-card-grid__description {

@@ -1,7 +1,12 @@
 :root {
     font-size: 62.5%;
 
-    --color-gray: 108, 108, 108;
+    --color-text-primary: 0, 0, 0;
+    --color-text-secondary: 108, 108, 108;
+    --color-text-tertiary: 157, 157, 157;
+
+    --color-overlay-primary: 250, 250, 250;
+    --color-overlay-secondary: 30, 30, 30;
 
     --gb-font-size-xs: 1.2rem;
     --gb-font-size-sm: 1.4rem;

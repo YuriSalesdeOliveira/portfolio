@@ -49,12 +49,15 @@
         :cards="cards"
     />
 
+    <Footer />
+
 </template>
 
 <script setup>
 
 import Header from '../Components/Header.vue';
 import CardGrid from '../Components/CardGrid.vue'
+import Footer from '../Components/Footer.vue';
 
 const cards = [
     {
@@ -119,10 +122,10 @@ const cards = [
                 font-weight: 400;
                 margin-bottom: var(--space-sm);
                 font-size: var(--gb-font-size-md);
-                color: rgba(var(--color-gray), .7);
+                color: rgba(var(--color-text-secondary), .7);
 
                 .c-presentation__highlight {
-                    color: black;
+                    color: rgb(var(--color-text-primary));
                 }
             }
         }

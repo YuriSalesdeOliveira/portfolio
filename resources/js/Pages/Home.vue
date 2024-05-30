@@ -28,7 +28,6 @@
                     </li>
                 </ul>
 
-
             </div>
 
             <img src="images/presentation.gif" alt="3D Example" class="c-presentation__image">
@@ -37,16 +36,47 @@
 
     </div>
 
-    <CardList :cards="cards" />
+    <CardGrid
+        title="Professional Experience"
+        subtitle="Password available upon request"
+        :cards="cards"
+    />
+
+    <CardGrid
+        title="Case Study"
+        columns="2"
+        backgroundColor="transparent"
+        :cards="cards"
+    />
 
 </template>
 
 <script setup>
 
 import Header from '../Components/Header.vue';
-import CardList from '../Components/CardList.vue'
+import CardGrid from '../Components/CardGrid.vue'
 
 const cards = [
+    {
+        image: 'images/duolingo.webp',
+        title: 'Duolingo',
+        description: "Launched multiple designs that enhanced Super Duolingo's subscription metrics",
+        tags: [
+            {
+                name: 'Product Designer'
+            }
+        ]
+    },
+    {
+        image: 'images/duolingo.webp',
+        title: 'Duolingo',
+        description: "Launched multiple designs that enhanced Super Duolingo's subscription metrics",
+        tags: [
+            {
+                name: 'Product Designer'
+            }
+        ]
+    },
     {
         image: 'images/duolingo.webp',
         title: 'Duolingo',
@@ -63,13 +93,17 @@ const cards = [
 
 <style scoped>
 
+.l-header {
+    margin-bottom: var(--space-xl);
+}
+
 .c-presentation {
     width: 100%;
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 0;
+    margin-bottom: var(--space-xl);
 
     .c-presentation-wrapper {
         
@@ -98,6 +132,10 @@ const cards = [
         width: 100%;
     }
 
+}
+
+.c-card-grid {
+    margin-bottom: var(--space-xl);
 }
 
 </style>
